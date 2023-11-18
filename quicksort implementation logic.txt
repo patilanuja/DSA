@@ -1,0 +1,27 @@
+arr = [2,5,1,3,4,7,9,6] output = [1,2,3,4,5,6,7,9]
+arr = [2,4,6,7,2,4,2]   output = [2,2,2,4,4,6,7]
+
+########## Define left and right positions of the array ###########
+pivot will be the last element of the array. 
+a, b will the pointers, will use a pointer to compare with pivot and swap.  
+will use b pointer to traverse the array and find out the elements which are less than pivot 
+
+# pseudo 
+########### helper function ################
+# traverse b through the array and find out the element which is less than pivot 
+# if found, swap it with a and increment a
+# once b reaches the end of the array, swap a with pivot, this mean all the elements 
+# less than pivot are on the left side of the array and all the elemnts greater than pivot
+# are on the right side of the array.
+
+
+########### main function ################
+# define the terminating condition, if left is greater than right, return
+# call the helper function and get the pivot position
+# call the main function recursively for the left and right side of the array
+
+
+########### time complexity ################
+# Ω(nlogn)  and θ(nlogn) - best and average case
+# O(n^2) - worst case 
+
